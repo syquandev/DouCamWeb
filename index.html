@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoCam App - Record Dual 4K Video</title>
+    <meta name="description" content="Unleash your creativity. Record from both front and rear cameras perfectly blended in real-time with DuoCam.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <style>
+        .hero {
+            position: relative;
+            padding-top: 15rem;
+            padding-bottom: 8rem;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero-image {
+            margin-top: 4rem;
+            max-width: 320px;
+            border-radius: 40px;
+            box-shadow: 0 30px 80px rgba(168, 85, 247, 0.4);
+            transform: perspective(1000px) rotateX(10deg);
+            transition: var(--transition);
+        }
+        .hero-image:hover { transform: perspective(1000px) rotateX(0deg) translateY(-10px); }
+        .hero-subtitle { margin: 0 auto; margin-bottom: 2.5rem; font-size: 1.25rem; }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 8rem 0;
+            background: linear-gradient(to top, rgba(168,85,247,0.1), transparent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Lighting Effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="container">
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 14V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V14M16 6L12 2M12 2L8 6M12 2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            DuoCam
+        </a>
+        <div class="nav-links">
+            <a href="#features" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Features</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container reveal">
+            <h1>Dual Camera.<br>One Flawless Shot.</h1>
+            <p class="hero-subtitle">Record your reaction and your environment simultaneously in rich 4K. Perfect for vloggers, journalists, and storytellers who don't want to miss a beat.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="#" class="btn btn-primary">Download on App Store</a>
+            </div>
+            
+            <img src="../screenshots/en/01_1M_downloads.png" alt="DuoCam Interface" class="hero-image reveal" style="transition-delay: 0.3s;">
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="container">
+        <div style="text-align: center;" class="reveal">
+            <h2>Professional Studio Tools</h2>
+            <p style="margin: 0 auto;">Everything you need to craft the perfect multi-angle video instantly without post-editing, powered by hardware acceleration.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="glass-card reveal" style="transition-delay: 0.1s;">
+                <div class="feature-icon">▣</div>
+                <h3>Picture in Picture</h3>
+                <p>Embed the front camera into your rear view seamlessly. Adjust the shape (circle, rectangle, star) natively in real time.</p>
+            </div>
+            <div class="glass-card reveal" style="transition-delay: 0.2s;">
+                <div class="feature-icon">◫</div>
+                <h3>Split Screen Modes</h3>
+                <p>Divide the screen perfectly into vertical or horizontal cinematic layouts. Great for interviews or dynamic storytelling.</p>
+            </div>
+            <div class="glass-card reveal" style="transition-delay: 0.3s;">
+                <div class="feature-icon">👤</div>
+                <h3>Live Background Removal</h3>
+                <p>Instantly extract the subject from the selfie camera and overlay them cleanly onto the rear camera world view.</p>
+            </div>
+            <div class="glass-card reveal" style="transition-delay: 0.4s;">
+                <div class="feature-icon">⚡️</div>
+                <h3>Dual 4K Export</h3>
+                <p>Maximize your hardware. Render and save both camera streams independently in stunning 4K 60fps for unlimited post-production.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Divider / Screenshot Showcase -->
+    <section style="padding: 0;" class="reveal">
+        <div style="display: flex; gap: 2rem; overflow-x: auto; padding: 2rem; justify-content: center;">
+            <img src="../screenshots/en/02_pip_mode.png" alt="PiP Mode" style="max-height: 500px; border-radius: 20px; border: 1px solid var(--glass-border);">
+            <img src="../screenshots/en/05_background_removal.png" alt="Background Removal" style="max-height: 500px; border-radius: 20px; border: 1px solid var(--glass-border);">
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section reveal">
+        <div class="container">
+            <h2>Join 1 Million+ Creators</h2>
+            <p style="margin: 0 auto 2rem auto;">Stop switching cameras and losing the moment. Tell the whole story today.</p>
+            <a href="#" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 2.5rem;">Get DuoCam Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:support@mayone.com">Contact Support</a>
+            </div>
+            <p class="copyright">&copy; 2026 Mayone Co., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
