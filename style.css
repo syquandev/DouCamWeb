@@ -117,6 +117,20 @@ nav {
     text-decoration: none;
     color: white;
 }
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.nav-link:hover {
+    color: white;
+}
 
 /* Buttons */
 .btn {
